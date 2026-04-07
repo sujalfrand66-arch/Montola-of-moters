@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — (MOM) Mantola Of Motors</title>
+  <meta name="description" content="All services by Mantola Of Motors (MOM) starting at ₹99. Oil change, brake service, wheel alignment, car scanning, denting, painting, pickup &amp; drop."/>
+  
+  
+  <link rel="stylesheet" href="css/style.css"/><link rel="stylesheet" href="css/animations.css"/><link rel="stylesheet" href="css/responsive.css"/>
+  <style>
+    .services-full-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:60px;}
+    .price-card{background:var(--clr-white);border:1.5px solid var(--clr-border);border-radius:12px;padding:40px 36px;display:flex;flex-direction:column;gap:14px;box-shadow:0 4px 24px var(--clr-shadow);transition:transform 0.4s var(--ease-expo),box-shadow 0.4s,border-color 0.4s;position:relative;overflow:hidden;}
+    .price-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--clr-blue-mid),var(--clr-blue-deep));transform:scaleX(0);transform-origin:left;transition:transform 0.4s var(--ease-expo);}
+    .price-card:hover{transform:translateY(-8px);box-shadow:0 16px 48px rgba(15,95,168,0.18);border-color:var(--clr-blue-deep);}
+    .price-card:hover::before{transform:scaleX(1);}
+    .price-card.featured{border-color:var(--clr-blue-deep);}.price-card.featured::before{transform:scaleX(1);}
+    .price-card.free-card{border-color:rgba(88,183,255,0.5);}
+    .price-card-icon{font-size:32px;}.price-card-title{font-family:var(--font-display);font-size:18px;color:var(--clr-blue-navy);letter-spacing:1px;font-weight:700;}
+    .price-card-desc{font-size:13px;color:var(--clr-text-muted);line-height:1.7;flex:1;}
+    .price-card-price{font-family:var(--font-display);font-size:38px;color:var(--clr-blue-deep);line-height:1;letter-spacing:1px;}
+    .price-card-price small{font-size:13px;color:var(--clr-text-muted);font-family:var(--font-body);font-weight:400;letter-spacing:0;}
+    .price-card-price.free{color:var(--clr-accent-red);}.price-card-cta{margin-top:8px;}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--clr-border);margin-top:56px;background:var(--clr-border);}
+    .process-step{background:var(--clr-white);padding:44px 36px;}
+    .process-step-num{font-family:var(--font-display);font-size:44px;color:var(--clr-blue-light);line-height:1;margin-bottom:14px;}
+    .process-step-title{font-family:var(--font-display);font-size:18px;color:var(--clr-blue-navy);letter-spacing:1px;margin-bottom:10px;}
+    .process-step-text{font-size:12px;color:var(--clr-text-muted);line-height:1.8;}
+    @media(max-width:1024px){.services-full-grid{grid-template-columns:1fr 1fr;}.process-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:640px){.services-full-grid{grid-template-columns:1fr;}.process-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+<div id="page-loader" aria-hidden="true"><span class="loader-logo">(MOM)</span><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<header>
+  <nav class="navbar nav-scrolled" id="navbar">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="(MOM)" class="nav-logo-img"/><span class="nav-logo-text">(MOM)</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html" class="active">Services</a></li>
+      <li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Book Now</a>
+  </nav>
+</header>
+<main>
+  <section class="page-hero" style="padding-top:80px">
+    <div class="page-hero-bg"><img src="images/cards/engine.jpg" alt="(MOM) Services"/></div>
+    <div class="container page-hero-content">
+      <span class="page-hero-label">What We Offer</span>
+      <h1 class="page-hero-title reveal">ALL<br/>SERVICES</h1>
+      <p class="page-hero-sub reveal">Starting at ₹99 — no hidden charges.</p>
+    </div>
+  </section>
+
+  <section class="section pricing-section">
+    <div class="container">
+      <div class="section-label reveal"><span>Full Price List</span></div>
+      <h2 class="section-title reveal" style="transition-delay:0.1s">TRANSPARENT<br/>PRICING</h2>
+      <div class="services-full-grid stagger-children">
+        <div class="price-card"><div class="price-card-icon">🛢️</div><div class="price-card-title">GENERAL OIL SERVICE</div><p class="price-card-desc">Engine oil change with filter replacement using premium grade oil for your vehicle.</p><div class="price-card-price">₹99</div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Now</a></div></div>
+        <div class="price-card"><div class="price-card-icon">🔧</div><div class="price-card-title">BRAKE SERVICE</div><p class="price-card-desc">Full brake inspection, pad replacement, fluid top-up. Drive safe, stop safe.</p><div class="price-card-price">₹99</div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Now</a></div></div>
+        <div class="price-card"><div class="price-card-icon">⚙️</div><div class="price-card-title">SUSPENSION REPAIR</div><p class="price-card-desc">Shocks, struts, bushings and linkages inspected and repaired for confident ride quality.</p><div class="price-card-price">₹99 <small>/each</small></div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Now</a></div></div>
+        <div class="price-card"><div class="price-card-icon">📡</div><div class="price-card-title">CAR SCANNING</div><p class="price-card-desc">OBD-II diagnostics for any make or model. Every fault code decoded and explained.</p><div class="price-card-price">₹99</div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Now</a></div></div>
+        <div class="price-card"><div class="price-card-icon">🎯</div><div class="price-card-title">WHEEL ALIGNMENT</div><p class="price-card-desc">Laser 4-wheel alignment for straight, even driving. Protects tyres and suspension.</p><div class="price-card-price">₹99</div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Now</a></div></div>
+        <div class="price-card"><div class="price-card-icon">⚖️</div><div class="price-card-title">WHEEL BALANCING</div><p class="price-card-desc">Digital dynamic balancing for vibration-free driving at any speed.</p><div class="price-card-price">₹99</div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Now</a></div></div>
+        <div class="price-card"><div class="price-card-icon">🔄</div><div class="price-card-title">TYRE ROTATION</div><p class="price-card-desc">Rotate position across all four wheels to ensure even tread wear and extended tyre life.</p><div class="price-card-price">₹99</div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Now</a></div></div>
+        <div class="price-card featured"><div class="price-card-icon">✨</div><div class="price-card-title">FULL CAR WASHING</div><p class="price-card-desc">Complete hand wash · machine polishing · protective wax seal. Showroom shine guaranteed.</p><div class="price-card-price">₹99</div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Now</a></div></div>
+        <div class="price-card free-card"><div class="price-card-icon">🩺</div><div class="price-card-title">GENERAL CHECKUP</div><p class="price-card-desc">Full multi-point vehicle health inspection. Any make, any model — know your car inside out.</p><div class="price-card-price free">FREE</div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Book Free</a></div></div>
+        <div class="price-card"><div class="price-card-icon">🎨</div><div class="price-card-title">DENTING &amp; PAINTING</div><p class="price-card-desc">Painting from ₹999 · Denting from ₹99 · Final quote based on vehicle condition assessment.</p><div class="price-card-price" style="font-size:22px;line-height:1.4">As Per<br/><small>Condition</small></div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Get Quote</a></div></div>
+        <div class="price-card"><div class="price-card-icon">🚗</div><div class="price-card-title">PICKUP &amp; DROP</div><p class="price-card-desc">Free pickup and drop within 5km of our workshop. Beyond 5km — minimal extra charges apply.</p><div class="price-card-price free" style="font-size:26px">Free<br/><small style="font-size:11px;color:var(--clr-text-muted)">within 5km</small></div><div class="price-card-cta"><a href="contact.html" class="btn btn-blue" style="width:100%;justify-content:center;font-size:10px">Schedule</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--clr-bg);border-top:1px solid var(--clr-border)">
+    <div class="container">
+      <div class="section-label reveal"><span>How It Works</span></div>
+      <h2 class="section-title reveal" style="transition-delay:0.1s">THE<br/>PROCESS</h2>
+      <div class="process-grid stagger-children">
+        <div class="process-step"><div class="process-step-num">01</div><h3 class="process-step-title">BOOK</h3><p class="process-step-text">Call, WhatsApp or book online. We confirm your slot instantly.</p></div>
+        <div class="process-step"><div class="process-step-num">02</div><h3 class="process-step-title">PICKUP</h3><p class="process-step-text">We collect your car if within 5km — free of charge. Or drop in.</p></div>
+        <div class="process-step"><div class="process-step-num">03</div><h3 class="process-step-title">SERVICE</h3><p class="process-step-text">Expert service carried out with digital updates sent to your phone.</p></div>
+        <div class="process-step"><div class="process-step-num">04</div><h3 class="process-step-title">DELIVERY</h3><p class="process-step-text">Car returned spotless with a full digital service report. Pay ₹99.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content container">
+      <h2 class="cta-title reveal">BOOK YOUR<br/>₹99 SERVICE</h2>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-white btn-arrow">Book Now</a>
+        <a href="projects.html" class="btn" style="border-color:rgba(255,255,255,0.35);color:white;background:transparent">Our Work</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-brand-logo"><img src="logo.png" alt="(MOM)"/><span class="footer-brand-name">(MOM)</span></div><p class="footer-tagline">Mantola Of Motors — premium automotive service starting at ₹99. Transparent pricing, expert technicians, zero compromise.</p><div class="footer-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Twitter">TW</a><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a></div></div><div class="footer-col"><h4 class="footer-col-title">Company</h4><ul class="footer-col-links"><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4 class="footer-col-title">Services</h4><ul class="footer-col-links"><li><a href="service-pages/engine-service.html">Oil Service</a></li><li><a href="service-pages/car-wash.html">Car Wash</a></li><li><a href="service-pages/tire-service.html">Tyre &amp; Wheel</a></li><li><a href="service-pages/ceramic-coating.html">Ceramic Coating</a></li><li><a href="service-pages/modification.html">Modification</a></li></ul></div><div class="footer-col"><h4 class="footer-col-title">Contact</h4><ul class="footer-col-links"><li><a href="tel:8302096868">8302096868</a></li><li><a href="mailto:hello@mantola.in">hello@mantola.in</a></li><li><a href="#">Your City, India</a></li><li><a href="#">Mon–Sat: 8am–8pm</a></li></ul></div></div><div class="footer-bottom"><span class="footer-copy">&copy; <span data-year></span> Mantola Of Motors. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div></div></footer>
+<script src="js/main.js"></script><script src="js/navigation.js"></script><script src="js/animations.js"></script>
+</body></html>
+

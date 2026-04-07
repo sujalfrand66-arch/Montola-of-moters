@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — (MOM) Mantola Of Motors</title>
+  <meta name="description" content="Browse Mantola Of Motors (MOM) featured projects — custom builds, ceramic coatings, wraps and full detailing transformations."/>
+  
+  
+  <link rel="stylesheet" href="css/style.css"/><link rel="stylesheet" href="css/animations.css"/><link rel="stylesheet" href="css/responsive.css"/>
+  <style>
+    .filter-bar{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:52px;}
+    .filter-btn{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--clr-text-muted);padding:10px 22px;border:1.5px solid var(--clr-border);background:none;font-family:var(--font-body);cursor:pointer;border-radius:4px;transition:all 0.3s;}
+    .filter-btn:hover,.filter-btn.active{color:white;background:var(--clr-blue-deep);border-color:var(--clr-blue-deep);}
+    .projects-masonry{display:grid;grid-template-columns:repeat(12,1fr);gap:3px;}
+    .proj-item{position:relative;overflow:hidden;cursor:pointer;}
+    .proj-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease-premium),filter 0.6s;filter:brightness(0.75);}
+    .proj-item:hover img{transform:scale(1.07);filter:brightness(0.45);}
+    .proj-item-1{grid-column:span 8;height:580px;}.proj-item-2{grid-column:span 4;height:580px;}
+    .proj-item-3{grid-column:span 4;height:440px;}.proj-item-4{grid-column:span 4;height:440px;}.proj-item-5{grid-column:span 4;height:440px;}
+    .proj-item-6{grid-column:span 6;height:460px;}.proj-item-7{grid-column:span 6;height:460px;}
+    .proj-label-always{position:absolute;bottom:0;left:0;right:0;padding:24px 32px;background:linear-gradient(to top,rgba(11,47,82,0.85),transparent);}
+    .proj-cat{font-size:10px;letter-spacing:4px;color:var(--clr-blue-mid);text-transform:uppercase;}
+    .proj-name{font-family:var(--font-display);font-size:22px;color:white;letter-spacing:1px;margin-top:4px;}
+    .proj-info{position:absolute;bottom:0;left:0;right:0;padding:24px 32px;background:linear-gradient(to top,rgba(11,47,82,0.9),transparent);opacity:0;transition:opacity 0.5s;}
+    .proj-item:hover .proj-info{opacity:1;}
+    .proj-detail{font-size:12px;color:rgba(255,255,255,0.6);margin-top:6px;letter-spacing:1px;}
+    .proj-arrow{position:absolute;top:24px;right:24px;width:42px;height:42px;border:1px solid rgba(255,255,255,0.35);display:flex;align-items:center;justify-content:center;color:white;opacity:0;transform:translateY(8px);transition:opacity 0.4s,transform 0.4s var(--ease-expo);}
+    .proj-item:hover .proj-arrow{opacity:1;transform:translateY(0);}
+    @media(max-width:1024px){.projects-masonry{grid-template-columns:repeat(2,1fr);}.proj-item-1,.proj-item-2,.proj-item-3,.proj-item-4,.proj-item-5,.proj-item-6,.proj-item-7{grid-column:span 1;height:340px;}.proj-item-1{grid-column:span 2;height:420px;}}
+    @media(max-width:640px){.projects-masonry{grid-template-columns:1fr;}.proj-item-1,.proj-item-2,.proj-item-3,.proj-item-4,.proj-item-5,.proj-item-6,.proj-item-7{grid-column:span 1;height:280px;}.proj-info{opacity:1;}}
+  </style>
+</head>
+<body>
+<div id="page-loader" aria-hidden="true"><span class="loader-logo">(MOM)</span><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<header>
+  <nav class="navbar nav-scrolled" id="navbar">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="(MOM)" class="nav-logo-img"/><span class="nav-logo-text">(MOM)</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Book Now</a>
+  </nav>
+</header>
+<main>
+  <section class="page-hero" style="padding-top:80px">
+    <div class="page-hero-bg"><img src="images/projects/project1.jpg" alt="(MOM) Projects"/></div>
+    <div class="container page-hero-content">
+      <span class="page-hero-label">Our Work</span>
+      <h1 class="page-hero-title reveal">FEATURED<br/>PROJECTS</h1>
+      <p class="page-hero-sub reveal">Every car a canvas. Every result a statement.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--clr-bg)">
+    <div class="container">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:28px;margin-bottom:48px">
+        <div><div class="section-label reveal"><span>Portfolio</span></div><h2 class="section-title reveal" style="transition-delay:0.1s">ALL<br/>PROJECTS</h2></div>
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="modification">Modification</button>
+          <button class="filter-btn" data-filter="ceramic">Ceramic</button>
+          <button class="filter-btn" data-filter="paint">Paint</button>
+          <button class="filter-btn" data-filter="detail">Detailing</button>
+        </div>
+      </div>
+      <div class="projects-masonry">
+        <div class="proj-item proj-item-1 img-reveal" data-category="modification"><img src="images/projects/project1.jpg" alt="Custom Build"/><div class="proj-label-always"><div class="proj-cat">Modification</div><div class="proj-name">FULL CUSTOM BUILD</div></div><div class="proj-info"><div class="proj-detail">Widebody · custom aero · alloy upgrade · 2024</div></div><div class="proj-arrow">→</div></div>
+        <div class="proj-item proj-item-2 img-reveal" data-category="ceramic"><img src="images/projects/project2.jpg" alt="Ceramic Shield"/><div class="proj-label-always"><div class="proj-cat">Ceramic Coating</div><div class="proj-name">CERAMIC SHIELD</div></div><div class="proj-info"><div class="proj-detail">9H ceramic + paint correction · 2024</div></div><div class="proj-arrow">→</div></div>
+        <div class="proj-item proj-item-3 img-reveal" data-category="paint"><img src="images/projects/project3.jpg" alt="Custom Wrap"/><div class="proj-label-always"><div class="proj-cat">Custom Wrap</div><div class="proj-name">MIDNIGHT WRAP</div></div><div class="proj-info"><div class="proj-detail">Satin wrap · 3M film · 2023</div></div><div class="proj-arrow">→</div></div>
+        <div class="proj-item proj-item-4 img-reveal" data-category="detail"><img src="images/projects/project4.jpg" alt="Full Detail"/><div class="proj-label-always"><div class="proj-cat">Full Detailing</div><div class="proj-name">SHOWROOM DETAIL</div></div><div class="proj-info"><div class="proj-detail">Deep clean · polish · wax · 2023</div></div><div class="proj-arrow">→</div></div>
+        <div class="proj-item proj-item-5 img-reveal" data-category="ceramic"><img src="images/projects/project1.jpg" alt="PPF + Ceramic"/><div class="proj-label-always"><div class="proj-cat">PPF + Ceramic</div><div class="proj-name">ARMOUR SHIELD</div></div><div class="proj-info"><div class="proj-detail">Full front PPF + ceramic top · 2023</div></div><div class="proj-arrow">→</div></div>
+        <div class="proj-item proj-item-6 img-reveal" data-category="modification"><img src="images/projects/project2.jpg" alt="Stage 3 Build"/><div class="proj-label-always"><div class="proj-cat">Performance</div><div class="proj-name">STAGE III BUILD</div></div><div class="proj-info"><div class="proj-detail">Stage 3 · full suspension · custom exhaust · 2022</div></div><div class="proj-arrow">→</div></div>
+        <div class="proj-item proj-item-7 img-reveal" data-category="paint"><img src="images/projects/project3.jpg" alt="Full Respray"/><div class="proj-label-always"><div class="proj-cat">Paint Restoration</div><div class="proj-name">FLAWLESS RESPRAY</div></div><div class="proj-info"><div class="proj-detail">Full respray · premium paint · 2022</div></div><div class="proj-arrow">→</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><div class="stat-number"><span data-count="180">0</span><em>+</em></div><div class="stat-label">Projects Done</div></div>
+      <div class="stat-item reveal" style="transition-delay:0.1s"><div class="stat-number"><span data-count="11">0</span></div><div class="stat-label">Service Types</div></div>
+      <div class="stat-item reveal" style="transition-delay:0.2s"><div class="stat-number"><span data-count="30">0</span><em>+</em></div><div class="stat-label">Car Brands Served</div></div>
+      <div class="stat-item reveal" style="transition-delay:0.3s"><div class="stat-number"><span data-count="99">0</span><em>%</em></div><div class="stat-label">Client Satisfaction</div></div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content container">
+      <h2 class="cta-title reveal">YOUR CAR<br/>IS NEXT</h2>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-white btn-arrow">Book Now — ₹99</a>
+        <a href="services.html" class="btn" style="border-color:rgba(255,255,255,0.35);color:white;background:transparent">All Services</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-brand-logo"><img src="logo.png" alt="(MOM)"/><span class="footer-brand-name">(MOM)</span></div><p class="footer-tagline">Mantola Of Motors — premium automotive service starting at ₹99.</p><div class="footer-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Twitter">TW</a><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a></div></div><div class="footer-col"><h4 class="footer-col-title">Company</h4><ul class="footer-col-links"><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4 class="footer-col-title">Services</h4><ul class="footer-col-links"><li><a href="service-pages/engine-service.html">Oil Service</a></li><li><a href="service-pages/car-wash.html">Car Wash</a></li><li><a href="service-pages/tire-service.html">Tyre &amp; Wheel</a></li><li><a href="contact.html">General Checkup FREE</a></li></ul></div><div class="footer-col"><h4 class="footer-col-title">Contact</h4><ul class="footer-col-links"><li><a href="tel:8302096868">8302096868</a></li><li><a href="mailto:hello@mantola.in">hello@mantola.in</a></li></ul></div></div><div class="footer-bottom"><span class="footer-copy">&copy; <span data-year></span> Mantola Of Motors. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms</a></div></div></div></footer>
+<script src="js/main.js"></script><script src="js/navigation.js"></script><script src="js/animations.js"></script>
+<script>
+  const filterBtns=document.querySelectorAll('.filter-btn');
+  const projItems=document.querySelectorAll('.proj-item');
+  filterBtns.forEach(btn=>{btn.addEventListener('click',()=>{filterBtns.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;projItems.forEach(item=>{const show=f==='all'||item.dataset.category===f;item.style.opacity=show?'1':'0.15';item.style.pointerEvents=show?'auto':'none';item.style.transition='opacity 0.4s';});});});
+</script>
+</body></html>
+

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOM Mantola Of Motors — Premium Car Care</title>
+  <meta name="description"
+    content="Mantola Of Motors — Premium Car Care  Starting At Just ₹99. Transparent pricing, expert technicians, zero compromise." />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Fullscreen Loader -->
+  <div id="page-loader" aria-hidden="true">
+    <span class="loader-logo">Mom</span>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="mom" class="nav-logo-img" />
+        <span class="nav-logo-text"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#services">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Book Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-shapes">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+      </div>
+      <div class="hero-lines">
+        <div class="hero-line hero-line-1"></div>
+        <div class="hero-line hero-line-2"></div>
+        <div class="hero-line hero-line-3"></div>
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="hero-label">The Future Of Auto Care</span>
+        <h1 class="hero-title">
+          <span class="title-line">MOM</span>
+        </h1>
+        <div class="hero-brand-name">Mantola Of Motors</div>
+        <p class="hero-subtitle">Everything For Your Car — Starting At ₹99</p>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- 2. Services / Pricing Section -->
+    <section class="section pricing-section" id="services">
+      <div class="container container-wide">
+        <div class="section-label reveal"><span>Pricing</span></div>
+        <h2 class="section-title reveal" style="transition-delay: 0.1s">OUR SERVICES</h2>
+        <p class="section-subtitle reveal" style="transition-delay: 0.2s">Premium Car Care labour Starting At Just ₹99
+        </p>
+
+        <div class="pricing-grid stagger-children">
+          <!-- Service 1 -->
+          <div class="price-card">
+            <div class="price-card-icon">🛢️</div>
+            <div class="price-card-title">General Oil Service</div>
+            <p class="price-card-desc">Engine oil change with filter replacement using premium grade oil.</p>
+            <div class="price-card-price">₹99</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="price-card">
+            <div class="price-card-icon">🔧</div>
+            <div class="price-card-title">Brake Service</div>
+            <p class="price-card-desc">Full brake inspection, pad replacement, and fluid top-up.</p>
+            <div class="price-card-price">₹99</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="price-card">
+            <div class="price-card-icon">⚙️</div>
+            <div class="price-card-title">Suspension Repair</div>
+            <p class="price-card-desc">Shocks, struts, bushings and linkages inspected and repaired.</p>
+            <div class="price-card-price">₹99 <small>each</small></div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="price-card">
+            <div class="price-card-icon">📡</div>
+            <div class="price-card-title">Car Scanning <small
+                style="text-transform:none; font-family:var(--font-body)">(Any Model)</small></div>
+            <p class="price-card-desc">OBD-II diagnostics. Every fault code decoded and explained.</p>
+            <div class="price-card-price">₹99</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="price-card">
+            <div class="price-card-icon">🎯</div>
+            <div class="price-card-title">Wheel Alignment</div>
+            <p class="price-card-desc">Laser 4-wheel alignment for straight, even driving.</p>
+            <div class="price-card-price">₹99</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="price-card">
+            <div class="price-card-icon">⚖️</div>
+            <div class="price-card-title">Wheel Balancing</div>
+            <p class="price-card-desc">Digital dynamic balancing for vibration-free driving.</p>
+            <div class="price-card-price">₹99</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Service 7 -->
+          <div class="price-card">
+            <div class="price-card-icon">🔄</div>
+            <div class="price-card-title">Tyre Rotation</div>
+            <p class="price-card-desc">Rotate position across all wheels to ensure even tread wear.</p>
+            <div class="price-card-price">₹99</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Service 8 -->
+          <div class="price-card">
+            <div class="price-card-icon">✨</div>
+            <div class="price-card-title">Full Car Washing / Polishing / Waxing</div>
+            <p class="price-card-desc">Complete hand wash, machine polishing, and protective wax seal.</p>
+            <div class="price-card-price">₹99</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Service 9 -->
+          <div class="price-card free-card">
+            <div class="price-card-icon">🩺</div>
+            <div class="price-card-title">General Checkup <small
+                style="text-transform:none; font-family:var(--font-body)">(Any Model)</small></div>
+            <p class="price-card-desc">Full multi-point vehicle health inspection. Know your car inside out.</p>
+            <div class="price-card-price free">FREE</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue" style="width: 100%; justify-content: center;">Book Free</a>
+            </div>
+          </div>
+
+          <!-- Service 10 -->
+          <div class="price-card">
+            <div class="price-card-icon">🎨</div>
+            <div class="price-card-title">Denting &amp; Painting</div>
+            <p class="price-card-desc">Professional denting and flawless painting matching original coat.</p>
+            <div class="price-card-price" style="font-size: 24px; line-height: 1.4;">Starting From<br />₹99</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue"
+                style="width: 100%; justify-content: center; margin-top: auto;">Get Quote</a>
+            </div>
+          </div>
+
+          <!-- Service 11 -->
+          <div class="price-card free-card">
+            <div class="price-card-icon">🚗</div>
+            <div class="price-card-title">Pickup &amp; Drop</div>
+            <p class="price-card-desc">We collect your car and deliver it back to your doorstep.</p>
+            <div class="price-card-price free" style="font-size: 28px; line-height: 1.2;">Free Under 5km</div>
+            <div class="price-card-cta">
+              <a href="contact.html" class="btn btn-blue"
+                style="width: 100%; justify-content: center; margin-top: auto;">Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sliding Marquee Separator -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-item"><span>PREMIUM AUTO CARE</span>
+          <div class="marquee-dot"></div>
+        </div>
+        <div class="marquee-item"><span>STARTING AT ₹99</span>
+          <div class="marquee-dot"></div>
+        </div>
+        <div class="marquee-item"><span>TRANSPARENT PRICING</span>
+          <div class="marquee-dot"></div>
+        </div>
+        <div class="marquee-item"><span>EXPERT TECHNICIANS</span>
+          <div class="marquee-dot"></div>
+        </div>
+        <div class="marquee-item"><span>FREE PICKUP & DROP</span>
+          <div class="marquee-dot"></div>
+        </div>
+        <div class="marquee-item"><span>PREMIUM AUTO CARE</span>
+          <div class="marquee-dot"></div>
+        </div>
+        <div class="marquee-item"><span>STARTING AT ₹99</span>
+          <div class="marquee-dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. About Section Preview -->
+    <section class="section" style="padding: 0;" id="about-preview">
+      <div class="about-preview">
+        <div class="about-preview-image img-reveal">
+          <img src="images/cards/engine.jpg" alt="Mantola Of Motors Garage" />
+        </div>
+        <div class="about-preview-content">
+          <div class="section-label reveal" style="--clr-blue-mid: #0b2f52;">
+            <span style="color: var(--clr-blue-navy)">Our Workshop</span>
+          </div>
+          <h2 class="section-title reveal" style="transition-delay: 0.1s">
+            PRECISION<br />MEETS PASSION
+          </h2>
+          <p class="section-subtitle reveal" style="transition-delay: 0.2s">
+            Mantola Of Motors (MOM) delivers agency-level auto care with absolute transparency. Step away from
+            overpriced dealerships and hidden charges. We bring you expert technicians, modern equipment, and a flat
+            starting rate of ₹99.
+          </p>
+          <div class="about-stats-row stagger-children">
+            <div>
+              <div class="about-stat-num">3,200<em>+</em></div>
+              <div class="about-stat-label">Cars Serviced</div>
+            </div>
+            <div>
+              <div class="about-stat-num">11</div>
+              <div class="about-stat-label">Service Types</div>
+            </div>
+            <div>
+              <div class="about-stat-num">100<em>%</em></div>
+              <div class="about-stat-label">Transparent</div>
+            </div>
+          </div>
+          <div class="reveal" style="margin-top: 32px; transition-delay: 0.4s">
+            <a href="about.html" class="btn btn-blue btn-arrow">Discover Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects (Featured) -->
+    <section class="section">
+      <div class="container container-wide">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+          <div>
+            <div class="section-label reveal"><span>Portfolio</span></div>
+            <h2 class="section-title reveal" style="transition-delay: 0.1s">FEATURED BUILD</h2>
+          </div>
+          <div class="reveal" style="transition-delay: 0.2s">
+            <a href="projects.html" class="btn btn-white btn-arrow" style="border-color: var(--clr-border)">View All</a>
+          </div>
+        </div>
+
+        <div class="projects-grid stagger-children">
+          <div class="project-card img-reveal" onclick="window.location='projects.html'">
+            <img src="images/projects/project1.jpg" alt="Custom widebody build" />
+            <div class="project-card-info">
+              <div class="project-card-num">01 / MODIFICATION</div>
+              <h3 class="project-card-title">PROJECT NEON</h3>
+              <div class="project-card-tag">Full Custom · Widebody</div>
+            </div>
+            <div class="project-card-arrow">→</div>
+          </div>
+          <div class="project-card img-reveal" onclick="window.location='projects.html'">
+            <img src="images/cards/ceramic.jpg" alt="Ceramic coating project" />
+            <div class="project-card-info">
+              <div class="project-card-num">02 / PROTECTION</div>
+              <h3 class="project-card-title">CERAMIC SHIELD</h3>
+              <div class="project-card-tag">9H Coating · Paint Correction</div>
+            </div>
+            <div class="project-card-arrow">→</div>
+          </div>
+          <div class="project-card img-reveal" onclick="window.location='projects.html'">
+            <img src="images/projects/project3.jpg" alt="Custom Wrap Project" />
+            <div class="project-card-info">
+              <div class="project-card-num">03 / PAINT & DETAIl</div>
+              <h3 class="project-card-title">SHOWROOM DETAIL</h3>
+              <div class="project-card-tag">Deep Clean · Wax · Polish</div>
+            </div>
+            <div class="project-card-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Gallery -->
+    <section class="section" style="background: var(--clr-blue-navy);">
+      <div class="container container-wide">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+          <div>
+            <div class="section-label reveal" style="--clr-blue-mid: #58b7ff;"><span
+                style="color: var(--clr-blue-mid)">Gallery</span></div>
+            <h2 class="section-title reveal" style="transition-delay: 0.1s; color: white;">IN ACTION</h2>
+          </div>
+          <div class="reveal" style="transition-delay: 0.2s">
+            <a href="gallery.html" class="btn btn-blue btn-arrow">Open Gallery</a>
+          </div>
+        </div>
+
+        <div class="gallery-grid stagger-children">
+          <div class="gallery-item img-reveal" onclick="window.location='gallery.html'">
+            <img src="images/cards/wash.jpg" alt="Wash process" />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">+</div>
+            </div>
+          </div>
+          <div class="gallery-item img-reveal" onclick="window.location='gallery.html'">
+            <img src="images/cards/tire.jpg" alt="Tire service" />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">+</div>
+            </div>
+          </div>
+          <div class="gallery-item img-reveal" onclick="window.location='gallery.html'">
+            <img src="images/cards/modification.jpg" alt="Mechanical repairs" />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">+</div>
+            </div>
+          </div>
+          <div class="gallery-item img-reveal" onclick="window.location='gallery.html'">
+            <img src="images/cards/painting.jpg" alt="Paintwork" />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Testimonials -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-label reveal" style="justify-content: center;"><span>Client Feedback</span></div>
+
+        <div style="overflow: hidden; position: relative;">
+          <div class="testimonials-track" id="testimonials-track">
+            <div class="testimonial-slide">
+              <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+              <p class="testimonial-quote">"Unbelievable transparency. Usually workshops try to upsell everything. Here,
+                my oil service was exactly ₹99 for labor + oil cost as promised. Car runs flawlessly."</p>
+              <div style="margin-top: 16px;">
+                <div class="testimonial-name">Rajeev S.</div>
+                <div class="testimonial-role">General Service</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+              <p class="testimonial-quote">"The free pickup and drop is a lifesaver. I handed my keys over in the
+                morning, got a digital report by lunch, and paid directly on my phone. Pure convenience."</p>
+              <div style="margin-top: 16px;">
+                <div class="testimonial-name">Meera A.</div>
+                <div class="testimonial-role">Brake & Suspension</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+              <p class="testimonial-quote">"Got a dent removed and the bumper repainted. You literally cannot tell where
+                the scratch was. The paint match is flawless and done right on schedule."</p>
+              <div style="margin-top: 16px;">
+                <div class="testimonial-name">Kevin M.</div>
+                <div class="testimonial-role">Denting & Painting</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls reveal">
+          <button class="testimonial-btn" id="testi-prev">←</button>
+          <div class="testimonial-dots" id="testi-dots">
+            <div class="testimonial-dot active" data-index="0"></div>
+            <div class="testimonial-dot" data-index="1"></div>
+            <div class="testimonial-dot" data-index="2"></div>
+          </div>
+          <button class="testimonial-btn" id="testi-next">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA / Booking -->
+    <section class="cta-section">
+      <div class="cta-content container">
+        <h2 class="cta-title reveal">TIME FOR A SERVICE?</h2>
+        <div class="cta-buttons reveal" style="transition-delay: 0.1s">
+          <a href="contact.html" class="btn btn-white btn-arrow">Book Online</a>
+          <a href="tel:8302096868" class="btn btn-blue"
+            style="border-color: rgba(255,255,255,0.3); background: transparent;">Call Us Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="footer">
+    <div class="container container-wide">
+      <div class="footer-grid">
+
+        <!-- Brand Col -->
+        <div>
+          <div class="footer-brand-logo">
+            <img src="logo.png" alt="(MOM)" />
+            <span class="footer-brand-name">(MOM)</span>
+          </div>
+          <p class="footer-tagline">
+            Mantola Of Motors — premium automotive service starting at ₹99. Transparent pricing, expert technicians,
+            zero compromise.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="https://wa.me/918302096868" aria-label="WhatsApp">WA</a>
+            <a href="#" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <div class="footer-col-links">
+            <a href="about.html">About Us</a>
+            <a href="projects.html">Our Work</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <div class="footer-col-links">
+            <a href="service-pages/engine-service.html">General Oil Service</a>
+            <a href="service-pages/car-wash.html">Car Washing</a>
+            <a href="service-pages/tire-service.html">Tyre & Wheel</a>
+            <a href="service-pages/modification.html">Denting & Paint</a>
+            <a href="service-pages/ceramic-coating.html">Ceramic Coating</a>
+          </div>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-col-links">
+            <a href="tel:8302096868">8302096868</a>
+            <a href="mailto:hello@mantol.in">hello@mantola.in</a>
+            <a href="#">suratgarh Rajasthan India</a>
+            <a href="#">Mon–Sat: 8am–8pm</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; <span data-year></span> Mantola Of Motors. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>

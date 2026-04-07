@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — (MOM) Mantola Of Motors</title>
+  <meta name="description" content="Discover the story, team and values behind Mantola Of Motors (MOM). Premium automotive service built on transparency, passion and expertise."/>
+  
+  
+  <link rel="stylesheet" href="css/style.css"/><link rel="stylesheet" href="css/animations.css"/><link rel="stylesheet" href="css/responsive.css"/>
+  <style>
+    .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:56px;}
+    .value-card{background:var(--clr-white);border:1.5px solid var(--clr-border);padding:50px 40px;transition:border-color 0.4s,box-shadow 0.4s;}
+    .value-card:hover{border-color:var(--clr-blue-deep);box-shadow:0 10px 36px var(--clr-shadow);}
+    .value-num{font-family:var(--font-display);font-size:48px;color:var(--clr-blue-light);line-height:1;margin-bottom:16px;}
+    .value-title{font-family:var(--font-display);font-size:22px;color:var(--clr-blue-navy);letter-spacing:1px;margin-bottom:12px;}
+    .value-text{font-size:13px;color:var(--clr-text-muted);line-height:1.9;}
+    .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin-top:56px;}
+    .team-card{position:relative;overflow:hidden;aspect-ratio:3/4;}
+    .team-card img{transition:transform 0.8s var(--ease-premium);filter:saturate(0.8);}
+    .team-card:hover img{transform:scale(1.05);filter:saturate(1);}
+    .team-card-info{position:absolute;bottom:0;left:0;right:0;padding:28px;background:linear-gradient(to top,rgba(11,47,82,0.9),transparent);}
+    .team-name{font-family:var(--font-display);font-size:18px;color:white;letter-spacing:1px;}
+    .team-role{font-size:10px;letter-spacing:3px;color:var(--clr-blue-mid);text-transform:uppercase;margin-top:4px;}
+    .timeline{position:relative;padding-left:56px;margin-top:52px;}
+    .timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--clr-border);}
+    .timeline-item{position:relative;margin-bottom:52px;}
+    .timeline-item::before{content:'';position:absolute;left:-60px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--clr-blue-mid);box-shadow:0 0 0 4px var(--clr-blue-light);}
+    .timeline-year{font-family:var(--font-display);font-size:12px;letter-spacing:4px;color:var(--clr-blue-mid);margin-bottom:8px;}
+    .timeline-event{font-family:var(--font-display);font-size:24px;color:var(--clr-blue-navy);letter-spacing:1px;margin-bottom:8px;}
+    .timeline-desc{font-size:13px;color:var(--clr-text-muted);line-height:1.9;max-width:480px;}
+    @media(max-width:1024px){.values-grid{grid-template-columns:1fr 1fr;}.team-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:640px){.values-grid{grid-template-columns:1fr;}.timeline{padding-left:36px;}}
+  </style>
+</head>
+<body>
+<div id="page-loader" aria-hidden="true"><span class="loader-logo">(MOM)</span><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<header>
+  <nav class="navbar nav-scrolled" id="navbar">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="(MOM)" class="nav-logo-img"/><span class="nav-logo-text">(MOM)</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Book Now</a>
+  </nav>
+</header>
+<main>
+  <section class="page-hero" style="padding-top:80px">
+    <div class="page-hero-bg"><img src="images/about/about-main.jpg" alt="About (MOM)"/></div>
+    <div class="container page-hero-content">
+      <span class="page-hero-label">Our Story</span>
+      <h1 class="page-hero-title reveal">ABOUT<br/>(MOM)</h1>
+      <p class="page-hero-sub reveal">Mantola Of Motors — built on passion, priced for everyone.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+        <div>
+          <div class="section-label reveal"><span>Our Mission</span></div>
+          <h2 class="section-title reveal" style="transition-delay:0.1s">PREMIUM CARE<br/>FOR ALL</h2>
+        </div>
+        <div>
+          <p style="font-size:15px;color:var(--clr-text-mid);line-height:1.9" class="reveal">We founded Mantola Of Motors (MOM) with a single belief: premium automotive care should not be a luxury. Starting at just ₹99, every service we offer is delivered with expert precision and total transparency.</p>
+          <p style="font-size:15px;color:var(--clr-text-mid);line-height:1.9;margin-top:18px" class="reveal" style="transition-delay:0.15s">No hidden charges. No upselling. Just honest, expert work on your vehicle every single time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+
+  <section class="section" style="background:var(--clr-bg)">
+    <div class="container">
+      <div class="section-label reveal"><span>Core Values</span></div>
+      <h2 class="section-title reveal" style="transition-delay:0.1s">WHAT DRIVES<br/>US</h2>
+      <div class="values-grid stagger-children">
+        <div class="value-card"><div class="value-num">01</div><h3 class="value-title">TRANSPARENCY</h3><p class="value-text">₹99 means ₹99. No surprises on your bill. Every charge explained before we start work.</p></div>
+        <div class="value-card"><div class="value-num">02</div><h3 class="value-title">EXPERTISE</h3><p class="value-text">Certified technicians trained to handle every make and model — from Maruti to Mercedes.</p></div>
+        <div class="value-card"><div class="value-num">03</div><h3 class="value-title">SPEED</h3><p class="value-text">Efficient service without cutting corners. Your time matters as much as your car's health.</p></div>
+        <div class="value-card"><div class="value-num">04</div><h3 class="value-title">INNOVATION</h3><p class="value-text">Latest diagnostic tools, digital reports, and modern equipment for the most accurate results.</p></div>
+        <div class="value-card"><div class="value-num">05</div><h3 class="value-title">CONVENIENCE</h3><p class="value-text">Free pickup &amp; drop within 5km. Service that comes to you, so you never need to adapt your day.</p></div>
+        <div class="value-card"><div class="value-num">06</div><h3 class="value-title">QUALITY</h3><p class="value-text">Premium products, genuine parts, expert hands. Affordable price does not mean compromised quality.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--clr-blue-navy)">
+    <div class="container">
+      <div class="section-label reveal" style="--clr-blue-mid:#58b7ff"><span style="color:var(--clr-blue-mid)">The Experts</span></div>
+      <h2 class="section-title reveal" style="color:white;transition-delay:0.1s">MEET THE<br/>TEAM</h2>
+      <div class="team-grid">
+        <div class="team-card img-reveal"><img src="images/about/team1.jpg" alt="Team Member"/><div class="team-card-info"><div class="team-name">VIKRAM SINHA</div><div class="team-role">Head Technician</div></div></div>
+        <div class="team-card img-reveal"><img src="images/about/team2.jpg" alt="Team Member"/><div class="team-card-info"><div class="team-name">ANANYA REDS</div><div class="team-role">Detailing Expert</div></div></div>
+        <div class="team-card img-reveal"><img src="images/about/team3.jpg" alt="Team Member"/><div class="team-card-info"><div class="team-name">ROHIT PAUL</div><div class="team-role">Paint Specialist</div></div></div>
+        <div class="team-card img-reveal"><img src="images/about/team4.jpg" alt="Team Member"/><div class="team-card-info"><div class="team-name">DIVYA NAIR</div><div class="team-role">Customer Relations</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px">
+        <div><div class="section-label reveal"><span>Our Journey</span></div><h2 class="section-title reveal" style="transition-delay:0.1s">MILESTONES<br/>IN TIME</h2></div>
+        <div class="timeline">
+          <div class="timeline-item reveal"><div class="timeline-year">2016</div><div class="timeline-event">THE BEGINNING</div><p class="timeline-desc">Mantola Of Motors opens with a single bay and one promise — honest service at fair prices.</p></div>
+          <div class="timeline-item reveal" style="transition-delay:0.1s"><div class="timeline-year">2019</div><div class="timeline-event">₹99 MODEL</div><p class="timeline-desc">We launch the industry-first ₹99 starting service model, disrupting local automotive care.</p></div>
+          <div class="timeline-item reveal" style="transition-delay:0.2s"><div class="timeline-year">2022</div><div class="timeline-event">EXPANSION</div><p class="timeline-desc">New 1,500 sq ft facility with 4 service bays, digital diagnostics, and a full detailing studio.</p></div>
+          <div class="timeline-item reveal" style="transition-delay:0.3s"><div class="timeline-year">2024</div><div class="timeline-event">(MOM) TODAY</div><p class="timeline-desc">3,200+ cars serviced. 11 service types. Pickup &amp; drop. The most trusted auto care in the city.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><div class="stat-number"><span data-count="8">0</span><em>+</em></div><div class="stat-label">Years in Business</div></div>
+      <div class="stat-item reveal" style="transition-delay:0.1s"><div class="stat-number"><span data-count="3200">0</span><em>+</em></div><div class="stat-label">Cars Serviced</div></div>
+      <div class="stat-item reveal" style="transition-delay:0.2s"><div class="stat-number"><span data-count="11">0</span></div><div class="stat-label">Service Types</div></div>
+      <div class="stat-item reveal" style="transition-delay:0.3s"><div class="stat-number"><span data-count="99">0</span><em>%</em></div><div class="stat-label">Client Satisfaction</div></div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content container">
+      <h2 class="cta-title reveal">JOIN THE<br/>(MOM) FAMILY</h2>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-white btn-arrow">Book a Service</a>
+        <a href="services.html" class="btn" style="border-color:rgba(255,255,255,0.35);color:white;background:transparent">Our Services</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-brand-logo"><img src="logo.png" alt="(MOM)"/><span class="footer-brand-name">(MOM)</span></div><p class="footer-tagline">Mantola Of Motors — premium automotive service starting at ₹99. Transparent pricing, expert technicians, zero compromise.</p><div class="footer-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Twitter">TW</a><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a></div></div>
+      <div class="footer-col"><h4 class="footer-col-title">Company</h4><ul class="footer-col-links"><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Services</h4><ul class="footer-col-links"><li><a href="service-pages/engine-service.html">Oil Service</a></li><li><a href="service-pages/car-wash.html">Car Wash</a></li><li><a href="service-pages/tire-service.html">Tyre &amp; Wheel</a></li><li><a href="service-pages/ceramic-coating.html">Ceramic Coating</a></li><li><a href="service-pages/modification.html">Modification</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Contact</h4><ul class="footer-col-links"><li><a href="tel:8302096868">8302096868</a></li><li><a href="mailto:hello@mantola.in">hello@mantola.in</a></li><li><a href="#">Your City, India</a></li><li><a href="#">Mon–Sat: 8am–8pm</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">&copy; <span data-year></span> Mantola Of Motors. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script><script src="js/navigation.js"></script><script src="js/animations.js"></script>
+</body></html>
+

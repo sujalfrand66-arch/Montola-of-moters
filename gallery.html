@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — (MOM) Mantola Of Motors</title>
+  <meta name="description" content="Mantola Of Motors (MOM) photo gallery — car wash results, ceramic coatings, full details and custom builds."/>
+  
+  
+  <link rel="stylesheet" href="css/style.css"/><link rel="stylesheet" href="css/animations.css"/><link rel="stylesheet" href="css/responsive.css"/>
+  <style>
+    .full-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+    .full-gallery-item{position:relative;overflow:hidden;cursor:pointer;aspect-ratio:4/3;}
+    .full-gallery-item.wide{grid-column:span 2;aspect-ratio:16/7;}
+    .full-gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.9s var(--ease-premium),filter 0.5s;filter:brightness(0.88);}
+    .full-gallery-item:hover img{transform:scale(1.07);filter:brightness(0.5);}
+    .gal-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.4s;}
+    .full-gallery-item:hover .gal-overlay{opacity:1;}
+    .gal-plus{width:54px;height:54px;border:1px solid rgba(255,255,255,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:22px;transform:scale(0.8);transition:transform 0.4s var(--ease-expo);}
+    .full-gallery-item:hover .gal-plus{transform:scale(1);}
+    .lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);display:flex;justify-content:space-between;width:100%;padding:0 24px;pointer-events:none;}
+    .lightbox-nav button{width:48px;height:48px;border:1px solid rgba(255,255,255,0.25);background:rgba(11,47,82,0.5);color:white;font-size:18px;cursor:pointer;pointer-events:auto;border-radius:4px;transition:all 0.3s;}
+    .lightbox-nav button:hover{border-color:var(--clr-blue-mid);background:rgba(15,95,168,0.7);}
+    @media(max-width:1024px){.full-gallery{grid-template-columns:repeat(2,1fr);}.full-gallery-item.wide{grid-column:span 2;}}
+    @media(max-width:640px){.full-gallery{grid-template-columns:1fr;}.full-gallery-item.wide{grid-column:span 1;aspect-ratio:4/3;}}
+  </style>
+</head>
+<body>
+<div id="page-loader" aria-hidden="true"><span class="loader-logo">(MOM)</span><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<header>
+  <nav class="navbar nav-scrolled" id="navbar">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="(MOM)" class="nav-logo-img"/><span class="nav-logo-text">(MOM)</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Book Now</a>
+  </nav>
+</header>
+<main>
+  <section class="page-hero" style="padding-top:80px">
+    <div class="page-hero-bg"><img src="images/gallery/gallery1.jpg" alt="(MOM) Gallery"/></div>
+    <div class="container page-hero-content">
+      <span class="page-hero-label">Visual Showcase</span>
+      <h1 class="page-hero-title reveal">OUR<br/>GALLERY</h1>
+      <p class="page-hero-sub reveal">Real results. Real cars. Real (MOM) quality.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--clr-bg)">
+    <div class="container" style="margin-bottom:48px">
+      <div class="section-label reveal"><span>Photography</span></div>
+      <h2 class="section-title reveal" style="transition-delay:0.1s">MOMENTS OF<br/>MASTERY</h2>
+    </div>
+    <div class="full-gallery" id="gallery-grid">
+      <div class="full-gallery-item wide img-reveal" data-src="images/gallery/gallery1.jpg"><img src="images/gallery/gallery1.jpg" alt="Gallery"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/gallery/gallery2.jpg"><img src="images/gallery/gallery2.jpg" alt="Gallery"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/gallery/gallery3.jpg"><img src="images/gallery/gallery3.jpg" alt="Gallery"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/gallery/gallery4.jpg"><img src="images/gallery/gallery4.jpg" alt="Gallery"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/gallery/gallery5.jpg"><img src="images/gallery/gallery5.jpg" alt="Gallery"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/gallery/gallery6.jpg"><img src="images/gallery/gallery6.jpg" alt="Gallery"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/projects/project1.jpg"><img src="images/projects/project1.jpg" alt="Project"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item wide img-reveal" data-src="images/projects/project2.jpg"><img src="images/projects/project2.jpg" alt="Project"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/projects/project3.jpg"><img src="images/projects/project3.jpg" alt="Project"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/projects/project4.jpg"><img src="images/projects/project4.jpg" alt="Project"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/cards/ceramic.jpg"><img src="images/cards/ceramic.jpg" alt="Ceramic"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+      <div class="full-gallery-item img-reveal" data-src="images/cards/engine.jpg"><img src="images/cards/engine.jpg" alt="Engine"/><div class="gal-overlay"><div class="gal-plus">+</div></div></div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content container">
+      <h2 class="cta-title reveal">MAKE YOUR<br/>CAR SHINE</h2>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-white btn-arrow">Book — ₹99</a>
+        <a href="projects.html" class="btn" style="border-color:rgba(255,255,255,0.35);color:white;background:transparent">View Projects</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <div class="lightbox-nav"><button id="lb-prev">←</button><button id="lb-next">→</button></div>
+  <img src="" alt="Gallery full view" id="lightbox-img"/>
+</div>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-brand-logo"><img src="logo.png" alt="(MOM)"/><span class="footer-brand-name">(MOM)</span></div><p class="footer-tagline">Mantola Of Motors — premium automotive service starting at ₹99.</p><div class="footer-social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Twitter">TW</a><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a></div></div><div class="footer-col"><h4 class="footer-col-title">Company</h4><ul class="footer-col-links"><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4 class="footer-col-title">Services</h4><ul class="footer-col-links"><li><a href="service-pages/engine-service.html">Oil Service ₹99</a></li><li><a href="service-pages/car-wash.html">Car Wash ₹99</a></li><li><a href="contact.html">Checkup FREE</a></li></ul></div><div class="footer-col"><h4 class="footer-col-title">Contact</h4><ul class="footer-col-links"><li><a href="tel:8302096868">8302096868</a></li><li><a href="mailto:hello@mantola.in">hello@mantola.in</a></li></ul></div></div><div class="footer-bottom"><span class="footer-copy">&copy; <span data-year></span> Mantola Of Motors. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms</a></div></div></div></footer>
+<script src="js/main.js"></script><script src="js/navigation.js"></script><script src="js/animations.js"></script>
+<script>
+  const items=Array.from(document.querySelectorAll('.full-gallery-item'));
+  const lb=document.getElementById('lightbox');
+  const lbImg=document.getElementById('lightbox-img');
+  let cur=0;
+  function openLb(i){cur=i;lbImg.src=items[cur].dataset.src;lb.classList.add('open');document.body.style.overflow='hidden';}
+  function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
+  items.forEach((item,i)=>item.addEventListener('click',()=>openLb(i)));
+  document.getElementById('lightbox-close').addEventListener('click',closeLb);
+  document.getElementById('lb-prev').addEventListener('click',()=>openLb((cur-1+items.length)%items.length));
+  document.getElementById('lb-next').addEventListener('click',()=>openLb((cur+1)%items.length));
+  lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
+  document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')document.getElementById('lb-prev').click();if(e.key==='ArrowRight')document.getElementById('lb-next').click();});
+</script>
+</body></html>
+
