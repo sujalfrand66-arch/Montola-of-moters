@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Modification — Mantola Of Motors</title>
+  <meta name="description" content="Mantola Of Motors custom modification service — widebody kits, bespoke interiors, performance exhaust, and full builds for the most discerning enthusiasts." />
+  
+  
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <style>
+    .mod-categories{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px;}
+    .mod-cat-card{position:relative;overflow:hidden;aspect-ratio:3/4;cursor:pointer;}
+    .mod-cat-card img{transition:transform 0.8s var(--ease-premium);filter:brightness(0.65);}
+    .mod-cat-card:hover img{transform:scale(1.06);filter:brightness(0.45);}
+    .mod-cat-info{position:absolute;bottom:0;left:0;right:0;padding:36px;background:linear-gradient(to top,rgba(0,0,0,0.85),transparent);}
+    .mod-cat-name{font-family:var(--font-display);font-size:28px;color:var(--clr-white);letter-spacing:2px;}
+    .mod-cat-text{font-size:12px;color:rgba(255,255,255,0.6);margin-top:8px;letter-spacing:1px;}
+    .service-features{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:60px;}
+    .feature-item{background:var(--clr-surface);border:1px solid var(--clr-border);padding:40px;}
+    .feature-num{font-family:var(--font-display);font-size:40px;color:rgba(201,168,76,0.2);line-height:1;margin-bottom:12px;}
+    .feature-title{font-family:var(--font-display);font-size:22px;color:var(--clr-white);letter-spacing:2px;margin-bottom:10px;}
+    .feature-text{font-size:13px;color:var(--clr-text-muted);line-height:1.9;}
+    .other-services{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+    .other-card{position:relative;overflow:hidden;aspect-ratio:4/3;cursor:pointer;}
+    .other-card img{transition:transform 0.8s var(--ease-premium);filter:brightness(0.6);}
+    .other-card:hover img{transform:scale(1.06);filter:brightness(0.4);}
+    .other-card-info{position:absolute;bottom:0;left:0;right:0;padding:28px;background:linear-gradient(to top,rgba(0,0,0,0.8),transparent);}
+    .other-card-title{font-family:var(--font-display);font-size:22px;color:var(--clr-white);letter-spacing:2px;}
+    @media(max-width:1024px){.mod-categories{grid-template-columns:1fr 1fr;}.service-features{grid-template-columns:1fr;}.other-services{grid-template-columns:1fr 1fr;}}
+    @media(max-width:640px){.mod-categories{grid-template-columns:1fr;}.other-services{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+  <div id="page-loader" aria-hidden="true">
+    <span class="loader-logo">(MOM)</span>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
+
+  <header>
+    <nav class="navbar nav-scrolled" id="navbar">
+      <a href="../index.html" class="nav-logo">(MOM)</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+        <li><a href="../services.html" class="active">Services</a></li><li><a href="../projects.html">Projects</a></li>
+        <li><a href="../gallery.html">Gallery</a></li><li><a href="../contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="../index.html">Home</a><a href="../about.html">About</a>
+      <a href="../services.html">Services</a><a href="../projects.html">Projects</a>
+      <a href="../gallery.html">Gallery</a><a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" style="padding-top:80px">
+      <div class="page-hero-bg"><img src="../images/cards/modification.jpg" alt="Custom Modification" /></div>
+      <div class="container page-hero-content">
+        <span class="page-hero-label">Service 03</span>
+        <h1 class="page-hero-title reveal">CUSTOM<br />MODIFICATION</h1>
+        <p class="page-hero-sub reveal">Your vision. Our craftsmanship. Limitless.</p>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+          <div>
+            <div class="section-label reveal"><span>Overview</span></div>
+            <h2 class="section-title reveal" style="transition-delay:0.1s">BEYOND<br />FACTORY</h2>
+            <p class="section-subtitle reveal" style="transition-delay:0.2s">Every car leaves a factory as a compromise. Our modification studio exists to remove those compromises and replace them with exactly what you've always imagined.</p>
+            <a href="../contact.html" class="btn btn-blue btn-arrow reveal" style="margin-top:32px;transition-delay:0.3s">Start Your Build</a>
+          </div>
+          <div class="img-reveal" style="height:480px">
+            <img src="../images/cards/modification.jpg" alt="Modification" style="border:1px solid var(--clr-border)" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" style="background:var(--clr-bg);border-top:1px solid var(--clr-border);border-bottom:1px solid var(--clr-border)">
+      <div class="container">
+        <div class="section-label reveal"><span>Categories</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">WHAT WE<br />BUILD</h2>
+        <div class="mod-categories stagger-children">
+          <div class="mod-cat-card">
+            <img src="../images/cards/modification.jpg" alt="Exterior" />
+            <div class="mod-cat-info">
+              <div class="mod-cat-name">EXTERIOR</div>
+              <div class="mod-cat-text">Widebody kits, aero packages, wraps, carbon fibre</div>
+            </div>
+          </div>
+          <div class="mod-cat-card">
+            <img src="../images/gallery/gallery3.jpg" alt="Interior" />
+            <div class="mod-cat-info">
+              <div class="mod-cat-name">INTERIOR</div>
+              <div class="mod-cat-text">Full reupholstery, Alcantara, carbon trim, custom gauges</div>
+            </div>
+          </div>
+          <div class="mod-cat-card">
+            <img src="../images/cards/engine.jpg" alt="Performance" />
+            <div class="mod-cat-info">
+              <div class="mod-cat-name">PERFORMANCE</div>
+              <div class="mod-cat-text">Exhaust, suspension, brakes, forced induction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section-label reveal"><span>Our Approach</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">HOW WE<br />BUILD</h2>
+        <div class="service-features stagger-children">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <h3 class="feature-title">VISION SESSION</h3>
+            <p class="feature-text">Every build begins with a deep-dive creative meeting. Renders, mood boards, and technical specifications developed before a single bolt is touched.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <h3 class="feature-title">ENGINEERED PRECISION</h3>
+            <p class="feature-text">All modifications are engineered to work in harmony. No compromises on safety, handling, or reliability — every change enhances the whole.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <h3 class="feature-title">LIVE UPDATES</h3>
+            <p class="feature-text">You're kept in the loop throughout. Photo updates, milestone sign-offs, and open access to your build team at every stage.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">04</div>
+            <h3 class="feature-title">SHOWCASE REVEAL</h3>
+            <p class="feature-text">Your completed build unveiled in a private reveal session. The moment your vision becomes reality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-bg"><img src="../images/hero/hero-poster.jpg" alt="" aria-hidden="true"/></div>
+      <div class="cta-content container">
+        <h2 class="cta-title reveal">BUILD YOUR<br />VISION</h2>
+        <div class="cta-buttons">
+          <a href="../contact.html" class="btn btn-blue btn-arrow">Start a Build</a>
+          <a href="../projects.html" class="btn btn-white">View Past Builds</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--clr-bg);border-top:1px solid var(--clr-border)">
+      <div class="container" style="margin-bottom:50px">
+        <div class="section-label reveal"><span>Explore More</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">OTHER<br />SERVICES</h2>
+      </div>
+      <div class="other-services">
+        <a href="engine-service.html" class="other-card img-reveal">
+          <img src="../images/cards/engine.jpg" alt="Engine" /><div class="other-card-info"><div class="other-card-title">ENGINE SERVICE</div></div>
+        </a>
+        <a href="ceramic-coating.html" class="other-card img-reveal">
+          <img src="../images/cards/ceramic.jpg" alt="Ceramic" /><div class="other-card-info"><div class="other-card-title">CERAMIC COATING</div></div>
+        </a>
+        <a href="car-wash.html" class="other-card img-reveal">
+          <img src="../images/cards/wash.jpg" alt="Wash" /><div class="other-card-info"><div class="other-card-title">PREMIUM WASH</div></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">(MOM)</div>
+          <p class="footer-tagline">Mantola Of Motors — premium automotive service starting at ₹99. Transparent pricing, expert technicians, zero compromise.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+        <div class="footer-col"><h4 class="footer-col-title">Company</h4><ul class="footer-col-links"><li><a href="../about.html">About Us</a></li><li><a href="../projects.html">Projects</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4 class="footer-col-title">Services</h4><ul class="footer-col-links"><li><a href="engine-service.html">Engine Service</a></li><li><a href="ceramic-coating.html">Ceramic Coating</a></li><li><a href="modification.html">Modification</a></li><li><a href="car-wash.html">Car Wash</a></li><li><a href="tire-service.html">Tire Service</a></li></ul></div>
+        <div class="footer-col"><h4 class="footer-col-title">Contact</h4><ul class="footer-col-links"><li><a href="tel:8302096868">8302096868</a></li><li><a href="mailto:hello@mantola.in">hello@mantola.in</a></li><li><a href="#">Your City, India</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; <span data-year></span> Mantola Of Motors. All rights reserved.</span>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ceramic Coating — Mantola Of Motors</title>
+  <meta name="description" content="Mantola Of Motors premium 9H ceramic coating service. The ultimate paint protection for your luxury vehicle — applied by certified professionals." />
+  
+  
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <style>
+    .service-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+    .service-packages{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px;}
+    .package-card{background:var(--clr-surface);border:1px solid var(--clr-border);padding:50px 40px;transition:border-color 0.4s;position:relative;}
+    .package-card.featured{border-color:var(--clr-blue-mid);}
+    .package-card:hover{border-color:var(--clr-blue-mid);}
+    .package-badge{position:absolute;top:-1px;right:32px;background:var(--clr-blue-mid);color:var(--clr-white);font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:6px 14px;font-family:var(--font-body);}
+    .package-name{font-family:var(--font-display);font-size:28px;color:var(--clr-white);letter-spacing:2px;margin-bottom:8px;}
+    .package-price{font-family:var(--font-display);font-size:42px;color:var(--clr-blue-mid);margin-bottom:24px;}
+    .package-price small{font-size:14px;color:var(--clr-text-muted);font-family:var(--font-body);}
+    .package-list{display:flex;flex-direction:column;gap:12px;margin-bottom:32px;}
+    .package-list li{font-size:12px;color:var(--clr-text-muted);letter-spacing:1px;padding-left:16px;position:relative;}
+    .package-list li::before{content:'—';position:absolute;left:0;color:var(--clr-blue-mid);}
+    .service-features{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:60px;}
+    .feature-item{background:var(--clr-surface);border:1px solid var(--clr-border);padding:40px;}
+    .feature-num{font-family:var(--font-display);font-size:40px;color:rgba(201,168,76,0.2);line-height:1;margin-bottom:12px;}
+    .feature-title{font-family:var(--font-display);font-size:22px;color:var(--clr-white);letter-spacing:2px;margin-bottom:10px;}
+    .feature-text{font-size:13px;color:var(--clr-text-muted);line-height:1.9;}
+    .other-services{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+    .other-card{position:relative;overflow:hidden;aspect-ratio:4/3;cursor:pointer;}
+    .other-card img{transition:transform 0.8s var(--ease-premium);filter:brightness(0.6);}
+    .other-card:hover img{transform:scale(1.06);filter:brightness(0.4);}
+    .other-card-info{position:absolute;bottom:0;left:0;right:0;padding:28px;background:linear-gradient(to top,rgba(0,0,0,0.8),transparent);}
+    .other-card-title{font-family:var(--font-display);font-size:22px;color:var(--clr-white);letter-spacing:2px;}
+    @media(max-width:1024px){.service-detail-grid{grid-template-columns:1fr;gap:48px;}.service-packages{grid-template-columns:1fr;}.service-features{grid-template-columns:1fr;}.other-services{grid-template-columns:1fr 1fr;}}
+    @media(max-width:640px){.other-services{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+  <div id="page-loader" aria-hidden="true">
+    <span class="loader-logo">(MOM)</span>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
+
+  <header>
+    <nav class="navbar nav-scrolled" id="navbar">
+      <a href="../index.html" class="nav-logo">(MOM)</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../services.html" class="active">Services</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="../index.html">Home</a><a href="../about.html">About</a>
+      <a href="../services.html">Services</a><a href="../projects.html">Projects</a>
+      <a href="../gallery.html">Gallery</a><a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" style="padding-top:80px">
+      <div class="page-hero-bg"><img src="../images/cards/ceramic.jpg" alt="Ceramic Coating" /></div>
+      <div class="container page-hero-content">
+        <span class="page-hero-label">Service 02</span>
+        <h1 class="page-hero-title reveal">CERAMIC<br />COATING</h1>
+        <p class="page-hero-sub reveal">The ultimate shield. The deepest gloss.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="service-detail-grid">
+          <div>
+            <div class="section-label reveal"><span>Overview</span></div>
+            <h2 class="section-title reveal" style="transition-delay:0.1s">LIQUID<br />ARMOUR</h2>
+            <p class="section-subtitle reveal" style="transition-delay:0.2s">Our 9H nano-ceramic coating bonds permanently to your paint at a molecular level, creating a sacrificial layer of glass-hard protection that repels contaminants, UV rays, and chemical fallout.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px" class="stagger-children">
+              <div style="padding:24px;background:var(--clr-surface);border:1px solid var(--clr-border)">
+                <div style="font-family:var(--font-display);font-size:36px;color:var(--clr-blue-mid)">9H</div>
+                <div style="font-size:11px;letter-spacing:3px;color:var(--clr-text-muted)">HARDNESS RATING</div>
+              </div>
+              <div style="padding:24px;background:var(--clr-surface);border:1px solid var(--clr-border)">
+                <div style="font-family:var(--font-display);font-size:36px;color:var(--clr-blue-mid)">5yr</div>
+                <div style="font-size:11px;letter-spacing:3px;color:var(--clr-text-muted)">PROTECTION LIFE</div>
+              </div>
+              <div style="padding:24px;background:var(--clr-surface);border:1px solid var(--clr-border)">
+                <div style="font-family:var(--font-display);font-size:36px;color:var(--clr-blue-mid)">110°</div>
+                <div style="font-size:11px;letter-spacing:3px;color:var(--clr-text-muted)">CONTACT ANGLE</div>
+              </div>
+              <div style="padding:24px;background:var(--clr-surface);border:1px solid var(--clr-border)">
+                <div style="font-family:var(--font-display);font-size:36px;color:var(--clr-blue-mid)">100%</div>
+                <div style="font-size:11px;letter-spacing:3px;color:var(--clr-text-muted)">UV REJECTION</div>
+              </div>
+            </div>
+            <a href="../contact.html" class="btn btn-blue btn-arrow reveal" style="margin-top:32px">Book Ceramic Coating</a>
+          </div>
+          <div class="img-reveal" style="height:520px">
+            <img src="../images/cards/ceramic.jpg" alt="Ceramic coating" style="border:1px solid var(--clr-border)" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--clr-bg);border-top:1px solid var(--clr-border);border-bottom:1px solid var(--clr-border)">
+      <div class="container">
+        <div class="section-label reveal"><span>What's Included</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">THE<br />PROCESS</h2>
+        <div class="service-features stagger-children">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <h3 class="feature-title">PAINT DECONTAMINATION</h3>
+            <p class="feature-text">Full wash, iron fallout removal, tar removal, and clay bar treatment to create a perfectly clean surface for bonding.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <h3 class="feature-title">PAINT CORRECTION</h3>
+            <p class="feature-text">Multi-stage machine polishing eliminates all swirls, scratches, and holograms. Your paint maximised before coating.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <h3 class="feature-title">COATING APPLICATION</h3>
+            <p class="feature-text">Gyeon or Nanolex ceramic applied panel by panel in our controlled environment, then cured with an infrared lamp.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">04</div>
+            <h3 class="feature-title">INSPECTION &amp; HANDOVER</h3>
+            <p class="feature-text">Full LED inspection under multiple light sources. Delivered with a care kit and detailed maintenance guide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-label reveal"><span>Packages</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">COATING<br />OPTIONS</h2>
+        <div class="service-packages stagger-children">
+          <div class="package-card">
+            <div class="package-name">ESSENTIAL</div>
+            <div class="package-price">From&nbsp;<small>KD</small>&nbsp;199</div>
+            <ul class="package-list">
+              <li>Full Decontamination Wash</li>
+              <li>1-Year Ceramic Coating</li>
+              <li>Basic Paint Correction</li>
+              <li>Maintenance Kit</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-white" style="width:100%;justify-content:center">Book Now</a>
+          </div>
+          <div class="package-card featured">
+            <div class="package-badge">Recommended</div>
+            <div class="package-name">SIGNATURE</div>
+            <div class="package-price">From&nbsp;<small>KD</small>&nbsp;499</div>
+            <ul class="package-list">
+              <li>Full Decontamination</li>
+              <li>Multi-Stage Correction</li>
+              <li>5-Year 9H Ceramic</li>
+              <li>Glass &amp; Wheel Coating</li>
+              <li>Pro Maintenance Kit</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-blue" style="width:100%;justify-content:center">Book Now</a>
+          </div>
+          <div class="package-card">
+            <div class="package-name">ELITE PPF+</div>
+            <div class="package-price">From&nbsp;<small>KD</small>&nbsp;1,299</div>
+            <ul class="package-list">
+              <li>Full Front PPF</li>
+              <li>Signature Ceramic On Top</li>
+              <li>Lifetime Warranty</li>
+              <li>Annual Inspection</li>
+              <li>VIP Care Pack</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-white" style="width:100%;justify-content:center">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--clr-bg);border-top:1px solid var(--clr-border)">
+      <div class="container" style="margin-bottom:50px">
+        <div class="section-label reveal"><span>Explore More</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">OTHER<br />SERVICES</h2>
+      </div>
+      <div class="other-services">
+        <a href="engine-service.html" class="other-card img-reveal">
+          <img src="../images/cards/engine.jpg" alt="Engine Service" />
+          <div class="other-card-info"><div class="other-card-title">ENGINE SERVICE</div></div>
+        </a>
+        <a href="modification.html" class="other-card img-reveal">
+          <img src="../images/cards/modification.jpg" alt="Modification" />
+          <div class="other-card-info"><div class="other-card-title">MODIFICATION</div></div>
+        </a>
+        <a href="car-wash.html" class="other-card img-reveal">
+          <img src="../images/cards/wash.jpg" alt="Car Wash" />
+          <div class="other-card-info"><div class="other-card-title">PREMIUM WASH</div></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">(MOM)</div>
+          <p class="footer-tagline">Mantola Of Motors — premium automotive service starting at ₹99. Transparent pricing, expert technicians, zero compromise.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-col-links">
+            <li><a href="../about.html">About Us</a></li><li><a href="../projects.html">Projects</a></li>
+            <li><a href="../gallery.html">Gallery</a></li><li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-col-links">
+            <li><a href="engine-service.html">Engine Service</a></li>
+            <li><a href="ceramic-coating.html">Ceramic Coating</a></li>
+            <li><a href="modification.html">Modification</a></li>
+            <li><a href="car-wash.html">Car Wash</a></li>
+            <li><a href="tire-service.html">Tire Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-col-links">
+            <li><a href="tel:8302096868">8302096868</a></li>
+            <li><a href="mailto:hello@mantola.in">hello@mantola.in</a></li>
+            <li><a href="#">Your City, India</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; <span data-year></span> Mantola Of Motors. All rights reserved.</span>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+

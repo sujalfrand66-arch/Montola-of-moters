@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engine Service — Mantola Of Motors</title>
+  <meta name="description" content="Mantola Of Motors' premium engine service — diagnostics, tuning, performance upgrades, and full rebuilds. The finest engineering in Kuwait." />
+  
+  
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <style>
+    .service-detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+    .service-packages { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:60px; }
+    .package-card { background:var(--clr-surface); border:1px solid var(--clr-border); padding:50px 40px; transition:border-color 0.4s; position:relative; }
+    .package-card.featured { border-color:var(--clr-blue-mid); }
+    .package-card:hover { border-color:var(--clr-blue-mid); }
+    .package-badge { position:absolute; top:-1px; right:32px; background:var(--clr-blue-mid); color:var(--clr-white); font-size:9px; letter-spacing:3px; text-transform:uppercase; padding:6px 14px; font-family:var(--font-body); }
+    .package-name { font-family:var(--font-display); font-size:28px; color:var(--clr-white); letter-spacing:2px; margin-bottom:8px; }
+    .package-price { font-family:var(--font-display); font-size:42px; color:var(--clr-blue-mid); margin-bottom:24px; }
+    .package-price small { font-size:14px; color:var(--clr-text-muted); font-family:var(--font-body); }
+    .package-list { display:flex; flex-direction:column; gap:12px; margin-bottom:32px; }
+    .package-list li { font-size:12px; color:var(--clr-text-muted); letter-spacing:1px; padding-left:16px; position:relative; }
+    .package-list li::before { content:'—'; position:absolute; left:0; color:var(--clr-blue-mid); }
+    .service-features { display:grid; grid-template-columns:repeat(2,1fr); gap:2px; margin-top:60px; }
+    .feature-item { background:var(--clr-surface); border:1px solid var(--clr-border); padding:40px; }
+    .feature-num { font-family:var(--font-display); font-size:40px; color:rgba(201,168,76,0.2); line-height:1; margin-bottom:12px; }
+    .feature-title { font-family:var(--font-display); font-size:22px; color:var(--clr-white); letter-spacing:2px; margin-bottom:10px; }
+    .feature-text { font-size:13px; color:var(--clr-text-muted); line-height:1.9; }
+    .other-services { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+    .other-card { position:relative; overflow:hidden; aspect-ratio:4/3; cursor:pointer; }
+    .other-card img { transition:transform 0.8s var(--ease-premium); filter:brightness(0.6); }
+    .other-card:hover img { transform:scale(1.06); filter:brightness(0.4); }
+    .other-card-info { position:absolute; bottom:0; left:0; right:0; padding:28px; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); }
+    .other-card-title { font-family:var(--font-display); font-size:22px; color:var(--clr-white); letter-spacing:2px; }
+    @media(max-width:1024px){ .service-detail-grid{grid-template-columns:1fr;gap:48px;} .service-packages{grid-template-columns:1fr;} .service-features{grid-template-columns:1fr;} .other-services{grid-template-columns:1fr 1fr;} }
+    @media(max-width:640px){ .other-services{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+
+  <div id="page-loader" aria-hidden="true">
+    <span class="loader-logo">(MOM)</span>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
+
+  <header>
+    <nav class="navbar nav-scrolled" id="navbar">
+      <a href="../index.html" class="nav-logo">(MOM)</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../services.html" class="active">Services</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="../index.html">Home</a><a href="../about.html">About</a>
+      <a href="../services.html">Services</a><a href="../projects.html">Projects</a>
+      <a href="../gallery.html">Gallery</a><a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" style="padding-top:80px">
+      <div class="page-hero-bg"><img src="../images/cards/engine.jpg" alt="Engine Service" /></div>
+      <div class="container page-hero-content">
+        <span class="page-hero-label">Service 01</span>
+        <h1 class="page-hero-title reveal">ENGINE<br />SERVICE</h1>
+        <p class="page-hero-sub reveal">Power refined to perfection.</p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section">
+      <div class="container">
+        <div class="service-detail-grid">
+          <div>
+            <div class="section-label reveal"><span>Overview</span></div>
+            <h2 class="section-title reveal" style="transition-delay:0.1s">PERFORMANCE<br />REDEFINED</h2>
+            <p class="section-subtitle reveal" style="transition-delay:0.2s">Our engine technicians are among the most qualified in the Gulf. From precision diagnostics to full rebuilds, every engine that passes through our workshop leaves performing better than it ever has.</p>
+            <a href="../contact.html" class="btn btn-blue btn-arrow reveal" style="transition-delay:0.3s;margin-top:32px">Book Engine Service</a>
+          </div>
+          <div class="img-reveal" style="height:480px">
+            <img src="../images/cards/engine.jpg" alt="Engine service" style="border:1px solid var(--clr-border)" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" style="background:var(--clr-bg);border-top:1px solid var(--clr-border);border-bottom:1px solid var(--clr-border)">
+      <div class="container">
+        <div class="section-label reveal"><span>What's Included</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">OUR<br />EXPERTISE</h2>
+        <div class="service-features stagger-children">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <h3 class="feature-title">FULL DIAGNOSTICS</h3>
+            <p class="feature-text">State-of-the-art OBD scanners and oscilloscopes map every fault code and sensor anomaly with surgical precision.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <h3 class="feature-title">PRECISION TUNING</h3>
+            <p class="feature-text">Custom ECU remapping tuned on our rolling road dynamometer for maximum power, torque, and efficiency.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <h3 class="feature-title">FULL REBUILD</h3>
+            <p class="feature-text">Complete engine disassembly, honing, re-ringing, balancing and reassembly. Your engine restored to factory-new specification.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">04</div>
+            <h3 class="feature-title">PERFORMANCE UPGRADE</h3>
+            <p class="feature-text">Intake, exhaust, intercooler, forced induction. We unlock the true potential hidden inside your engine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section">
+      <div class="container">
+        <div class="section-label reveal"><span>Pricing</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">SERVICE<br />PACKAGES</h2>
+        <div class="service-packages stagger-children">
+          <div class="package-card">
+            <div class="package-name">ESSENTIAL</div>
+            <div class="package-price">From&nbsp;<small>KD</small>&nbsp;150</div>
+            <ul class="package-list">
+              <li>Full OBD Diagnostics</li>
+              <li>Oil &amp; Filter Change</li>
+              <li>Air Filter Service</li>
+              <li>Spark Plug Inspection</li>
+              <li>Battery Health Check</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-white" style="width:100%;justify-content:center">Book Now</a>
+          </div>
+          <div class="package-card featured">
+            <div class="package-badge">Most Popular</div>
+            <div class="package-name">PERFORMANCE</div>
+            <div class="package-price">From&nbsp;<small>KD</small>&nbsp;450</div>
+            <ul class="package-list">
+              <li>All Essential Services</li>
+              <li>ECU Remap &amp; Tune</li>
+              <li>Intake Upgrade</li>
+              <li>Performance Exhaust</li>
+              <li>Dyno Run &amp; Report</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-blue" style="width:100%;justify-content:center">Book Now</a>
+          </div>
+          <div class="package-card">
+            <div class="package-name">FULL REBUILD</div>
+            <div class="package-price">From&nbsp;<small>KD</small>&nbsp;1,800</div>
+            <ul class="package-list">
+              <li>Complete Disassembly</li>
+              <li>Bore &amp; Honing</li>
+              <li>New Pistons &amp; Rings</li>
+              <li>Crankshaft Balancing</li>
+              <li>12-Month Warranty</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-white" style="width:100%;justify-content:center">Book Now</a>
+          </div>
+        </div>
+        <p style="text-align:center;font-size:12px;color:var(--clr-text-muted);margin-top:24px;letter-spacing:1px">All prices are indicative. Final quote provided after vehicle inspection.</p>
+      </div>
+    </section>
+
+    <!-- Other Services -->
+    <section class="section" style="background:var(--clr-bg);border-top:1px solid var(--clr-border)">
+      <div class="container" style="margin-bottom:50px">
+        <div class="section-label reveal"><span>Explore More</span></div>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">OTHER<br />SERVICES</h2>
+      </div>
+      <div class="other-services">
+        <a href="ceramic-coating.html" class="other-card img-reveal">
+          <img src="../images/cards/ceramic.jpg" alt="Ceramic Coating" />
+          <div class="other-card-info"><div class="other-card-title">CERAMIC COATING</div></div>
+        </a>
+        <a href="modification.html" class="other-card img-reveal">
+          <img src="../images/cards/modification.jpg" alt="Modification" />
+          <div class="other-card-info"><div class="other-card-title">MODIFICATION</div></div>
+        </a>
+        <a href="tire-service.html" class="other-card img-reveal">
+          <img src="../images/cards/tire.jpg" alt="Tire Service" />
+          <div class="other-card-info"><div class="other-card-title">TIRE &amp; WHEEL</div></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">(MOM)</div>
+          <p class="footer-tagline">Mantola Of Motors — premium automotive service starting at ₹99. Transparent pricing, expert technicians, zero compromise.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-col-links">
+            <li><a href="../about.html">About Us</a></li><li><a href="../projects.html">Projects</a></li>
+            <li><a href="../gallery.html">Gallery</a></li><li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-col-links">
+            <li><a href="engine-service.html">Engine Service</a></li>
+            <li><a href="ceramic-coating.html">Ceramic Coating</a></li>
+            <li><a href="modification.html">Modification</a></li>
+            <li><a href="car-wash.html">Car Wash</a></li>
+            <li><a href="tire-service.html">Tire Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-col-links">
+            <li><a href="tel:8302096868">8302096868</a></li>
+            <li><a href="mailto:hello@mantola.in">hello@mantola.in</a></li>
+            <li><a href="#">Your City, India</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; <span data-year></span> Mantola Of Motors. All rights reserved.</span>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>
+
+
+
