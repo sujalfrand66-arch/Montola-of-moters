@@ -442,3 +442,46 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     letter-spacing: 3px;
   }
 }
+
+
+
+
+
+.hero-title {
+  font-size: 220px !important;
+  line-height: 0.9;
+  letter-spacing: 12px;
+  font-weight: 300;
+}
+
+.hero-subtitle {
+  font-size: 42px !important;
+  letter-spacing: 6px;
+  margin-top: 18px;
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 160px !important;
+    letter-spacing: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 32px !important;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 100px !important;
+    letter-spacing: 6px;
+    line-height: 1;
+  }
+
+  .hero-subtitle {
+    font-size: 22px !important;
+    letter-spacing: 3px;
+    margin-top: 12px;
+  }
+}
