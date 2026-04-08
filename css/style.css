@@ -467,7 +467,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   }
 
   .hero-subtitle {
-    font-size: 32px !important;
+    font-size: 22px !important;
     letter-spacing: 5px;
   }
 }
